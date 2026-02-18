@@ -1,23 +1,15 @@
-# ps1c.py
-# Assignment 1 - Part C: Finding the Right Amount to Save
-# Author: Hemanth Pramidhala
-# Collaborators: None
-# Input
 starting_salary = float(input("Enter the starting salary: "))
-# Constants
 total_cost = 1000000
 portion_down_payment = 0.25
 down_payment = total_cost * portion_down_payment
 r = 0.04
 semi_annual_raise = 0.07
 months = 36
-# Bisection search setup
 low = 0
 high = 10000
 steps = 0
 epsilon = 100
 best_rate = None
-# Check if possible with 100% saving
 current_savings = 0
 annual_salary = starting_salary
 monthly_salary = annual_salary / 12
